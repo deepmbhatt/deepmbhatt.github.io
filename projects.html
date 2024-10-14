@@ -125,7 +125,7 @@
 			<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
 			    <ol class="breadcrumb">
 				    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-				    <li class="breadcrumb-item active" aria-current="page"> Certification</li>
+				    <li class="breadcrumb-item active" aria-current="page"> Projects</li>
 			    </ol>
 			</nav>
 		</div><!--//container-->
@@ -136,34 +136,217 @@
 			<div class="row g-x-5">
 	            <div class="col-lg-8 col-xl-9">
 					<section class="main-section order-lg-last mb-5">
-						<h2 class="main-section-heading mb-4">My Certification</h2>
-						<div class="intro mb-5">Empowering my expertise through continuous learning and professional certifications.
-							<br>Along with verified skills and knowledge in cutting-edge technologies and methodologies.
-						</div>
+						<h2 class="main-section-heading mb-4">My Projects</h2>
+						<div class="intro mb-5">I have had some hands on experience in developing projects in various domains. Here are some of the projects that I have worked on.</div>
 					</section>
 		<section class="main-section">
 			<div class="filter-options mb-4">
-				<div class="d-flex justify-content-center">
-					<div class="btn-group" role="group" aria-label="Certification Filters">
-						<input type="radio" class="btn-check" name="certFilter" id="all" autocomplete="off" onclick="filterCertificates('all')">
+				<div class="d-flex justify-content-center flex-wrap">
+					<div class="btn-group" role="group" aria-label="Project Filters">
+						<input type="radio" class="btn-check" name="proFilter" id="all" autocomplete="off" onclick="filterProjects('all')">
 						<label class="btn btn-outline-primary" for="all">All</label>
 
-						<input type="radio" class="btn-check" name="certFilter" id="coursera" autocomplete="off" onclick="filterCertificates('coursera')">
-						<label class="btn btn-outline-primary" for="coursera">Coursera</label>
+						<input type="radio" class="btn-check" name="proFilter" id="aiml" autocomplete="off" onclick="filterProjects('aiml')">
+						<label class="btn btn-outline-primary" for="aiml">AI-ML</label>
 
-						<input type="radio" class="btn-check" name="certFilter" id="others" autocomplete="off" onclick="filterCertificates('others')">
-						<label class="btn btn-outline-primary" for="others">Others</label>
+						<input type="radio" class="btn-check" name="proFilter" id="software" autocomplete="off" onclick="filterProjects('python')">
+						<label class="btn btn-outline-primary" for="software">100 Days of python</label>
+						
 					</div>
 				</div>
 			</div>
-			<!-- <id="certificates-container"> -->
-				<div  class="certification-box" data-platform="coursera">
+			<div class="project-box" data-platform="aiml">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/aiml-1.jpg')">
+									<img src="assets/images/projects/aiml-1.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br><a href="https://github.com/deepmbhatt/Universal-Quality-Detection" style="text-decoration: none;"><h3 style="font-size: 2.0rem; color: #000000;">Universal Quality Detection</h3></a>
+								<p style="font-size: 1rem; color: #555;">A machine learning solution for automated defect detection in manufacturing, using YOLO and OpenCV to classify defective and non-defective materials.<br> This project improves accuracy and efficiency in quality control processes through object detection models.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="project-box" data-platform="aiml">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/aiml2.jpg')">
+									<img src="assets/images/projects/aiml-2.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br><a href="https://github.com/deepmbhatt/Trademark-Infringement-Detection-AI" style="text-decoration: none;"><h3 style="font-size: 2.0rem; color: #000000;">Trademark Infringement Detection AI</h3></a>
+								<p style="font-size: 1rem; color: #555;">An AI tool for detecting potential trademark infringement by comparing company names against registered trademarks in India. It utilizes LangChain, FAISS, and Google Generative AI, with a user-friendly Streamlit app for interactive queries.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="project-box" data-platform="aiml">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/aiml-3.jpg')">
+									<img src="assets/images/projects/aiml-3.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br><a href="https://github.com/deepmbhatt/British-Airways-Reviews-Analysis-and-Booking-Prediction" style="text-decoration: none;"><h3 style="font-size: 2.0rem; color: #000000;">British Airways Reviews Analysis and Booking Prediction</h3></a>
+								<p style="font-size: 1rem; color: #555;">A project that scrapes and analyzes British Airways customer reviews, applying sentiment analysis and predictive modeling to forecast booking completion. The goal is to uncover insights from reviews and predict future bookings.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="project-box" data-platform="aiml">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/aiml-4.jpg')">
+									<img src="assets/images/projects/aiml-4.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br><a href="https://github.com/deepmbhatt/British-Airways-Reviews-Analysis-and-Booking-Prediction" style="text-decoration: none;"><h3 style="font-size: 2.0rem; color: #000000;">911 Calls Data Analysis</h3></a>
+								<p style="font-size: 1rem; color: #555;">An analysis of 911 call data from 2015-2022, focusing on trends, response times, and incident types. This project provides insights into public safety patterns through data visualization and analysis.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="project-box" data-platform="aiml">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/aiml-5.jpg')">
+									<img src="assets/images/projects/aiml-5.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br><a href="https://github.com/deepmbhatt/Logo_Match" style="text-decoration: none;"><h3 style="font-size: 2.0rem; color: #000000;">Logo Match</h3></a>
+								<p style="font-size: 1rem; color: #555;">A logo similarity detection tool that finds similar images within a folder based on an uploaded image. It focuses on image comparison, making it ideal for logo detection and recognition tasks.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="project-box" data-platform="aiml">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/aiml-6.jpg')">
+									<img src="assets/images/projects/aiml-6.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br><a href="https://github.com/deepmbhatt/Image-Text-Extraction-using-Keras-OCR" style="text-decoration: none;"><h3 style="font-size: 2.0rem; color: #000000;">Image-Text-Extraction-using-Keras-OCR</h3></a>
+								<p style="font-size: 1rem; color: #555;">A Streamlit app for extracting text from logo images using Keras OCR. It features real-time text extraction with a sleek, dark-themed interface, providing an interactive experience for accurate logo text extraction.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="project-box" data-platform="all">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/all-1.jpg')">
+									<img src="assets/images/projects/all-1.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br><a href="https://github.com/deepmbhatt/Kill-Covid" style="text-decoration: none;"><h3 style="font-size: 2.0rem; color: #000000;">Kill-Covid</h3></a>
+								<p style="font-size: 1rem; color: #555;">A fun, educational game built with Pygame and tkinter, where players guide a bird through Covid-like obstacles while collecting vaccines for points. This game teaches children about vaccines through interactive, sound-based gameplay.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="project-box" data-platform="aiml">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/all2.jpg')">
+									<img src="assets/images/projects/all2	.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br><a href="https://github.com/deepmbhatt/PDF_to_Image_using_Python" style="text-decoration: none;"><h3 style="font-size: 2.0rem; color: #000000;">PDF to Image Using Python</h3></a>
+								<p style="font-size: 1rem; color: #555;">A tool that converts uploaded PDF pages into downloadable images in PNG format or all as a ZIP file. This project simplifies the process of extracting visual data from PDFs for further use.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			
+				<div class="project-box" data-platform="python">
 					<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
-						<div class="certification-section">
-							<div class="certification-item d-flex flex-column flex-md-row align-items-center">
-								<div class="certification-image me-md-3 mb-md-0">
-									<a href="javascript:void(0);" onclick="openImageModal('assets/images/certificates/IBM_01.jpg')">
-										<img src="assets\images\certificates\IBM_01.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+						<div class="project-section">
+							<div class="project-item d-flex flex-column flex-md-row align-items-center">
+								<div class="project-image me-md-3 mb-md-0">
+									<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day1.jpg')">
+										<img src="assets/images/projects/day1.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
 									</a>
 									<!-- Modal Structure -->
 									<div id="imageModal" class="modal">
@@ -171,25 +354,341 @@
 										<img class="modal-content" id="modalImage">
 									</div>
 								</div>
-								<div class="certification-text text-center text-md-start d-flex flex-column justify-content-center">
+								<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
 									<br>
-									<h3 style="font-size: 2.0rem; color: #333;">
-										<a href="https://coursera.org/share/47d8394906da827ee82163cc6e0213d6" target="_blank" style="color: #000000; text-decoration: none;" onmouseover="this.style.color='#4930b8';" onmouseout="this.style.color='#000000';">IBM AI Engineering</a>
-									</h3>
-									<p style="font-size: 1rem; color: #555;">Helped develop expertise in AI, machine learning, deep learning, and computer vision<br> using TensorFlow, Keras, and PyTorch, and applied these skills in a real-world AI project.</p>
+									<h3 style="font-size: 2.0rem; color: #000000;">Band Name Generator</h3>
+									<p style="font-size: 1rem; color: #555;">Create a unique band name by combining user inputs like their favorite city and pet name. This fun project helps familiarize you with basic Python syntax and input handling.</p>
 								</div>
-							</div><!--//certification-section-->
-						</div><!--//certification-box-->
-					</div><!--//certification-box-->
+							</div>
+						</div>
+					</div>
 					<br>
 				</div>
-			<div  class="certification-box" data-platform="coursera">
+
+				<div class="project-box" data-platform="python">
+					<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+						<div class="project-section">
+							<div class="project-item d-flex flex-column flex-md-row align-items-center">
+								<div class="project-image me-md-3 mb-md-0">
+									<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day2.jpg')">
+										<img src="assets/images/projects/day2.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+									</a>
+									<!-- Modal Structure -->
+									<div id="imageModal" class="modal">
+										<span class="close" onclick="closeImageModal()">&times;</span>
+										<img class="modal-content" id="modalImage">
+									</div>
+								</div>
+								<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+									<br>
+									<h3 style="font-size: 2.0rem; color: #000000;">Tip Calculator</h3>
+									<p style="font-size: 1rem; color: #555;">Develop a simple calculator that computes tips based on the bill amount and the number of people. It’s an engaging way to practice arithmetic operations and user interaction.</p>
+									</div>
+							</div>
+						</div>
+					</div>
+					<br>
+				</div>
+
+				<div class="project-box" data-platform="python">
+					<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+						<div class="project-section">
+							<div class="project-item d-flex flex-column flex-md-row align-items-center">
+								<div class="project-image me-md-3 mb-md-0">
+									<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day3.jpg')">
+										<img src="assets/images/projects/day3.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+									</a>
+									<!-- Modal Structure -->
+									<div id="imageModal" class="modal">
+										<span class="close" onclick="closeImageModal()">&times;</span>
+										<img class="modal-content" id="modalImage">
+									</div>
+								</div>
+								<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+									<br>
+									<h3 style="font-size: 2.0rem; color: #000000;">Treasure Island Game</h3>
+									<p style="font-size: 1rem; color: #555;">Experience a text-based adventure game where players navigate through choices to find treasure. This project introduces conditional logic and storytelling through code.</p>
+									</div>
+							</div>
+						</div>
+					</div>
+					<br>
+				</div>
+
+				<div class="project-box" data-platform="python">
+					<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+						<div class="project-section">
+							<div class="project-item d-flex flex-column flex-md-row align-items-center">
+								<div class="project-image me-md-3 mb-md-0">
+									<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day4.jpg')">
+										<img src="assets/images/projects/day4.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+									</a>
+									<!-- Modal Structure -->
+									<div id="imageModal" class="modal">
+										<span class="close" onclick="closeImageModal()">&times;</span>
+										<img class="modal-content" id="modalImage">
+									</div>
+								</div>
+								<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+									<br>
+									<h3 style="font-size: 2.0rem; color: #000000;">Rock Paper Scissors</h3>
+<p style="font-size: 1rem; color: #555;">Implement the classic Rock Paper Scissors game where users compete against the computer. It enhances understanding of random choice generation and basic game mechanics.</p>
+</div>
+							</div>
+						</div>
+					</div>
+					<br>
+				</div>
+
+				<div class="project-box" data-platform="python">
+					<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+						<div class="project-section">
+							<div class="project-item d-flex flex-column flex-md-row align-items-center">
+								<div class="project-image me-md-3 mb-md-0">
+									<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day5.jpg')">
+										<img src="assets/images/projects/day5.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+									</a>
+									<!-- Modal Structure -->
+									<div id="imageModal" class="modal">
+										<span class="close" onclick="closeImageModal()">&times;</span>
+										<img class="modal-content" id="modalImage">
+									</div>
+								</div>
+								<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+									<br>
+									<h3 style="font-size: 2.0rem; color: #000000;">Password Generator</h3>
+									<p style="font-size: 1rem; color: #555;">Build a tool that generates secure passwords based on user-defined criteria. This project emphasizes the importance of password security and randomization in programming.</p>
+									</div>
+							</div>
+						</div>
+					</div>
+					<br>
+				</div>
+
+				<div class="project-box" data-platform="python">
+					<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+						<div class="project-section">
+							<div class="project-item d-flex flex-column flex-md-row align-items-center">
+								<div class="project-image me-md-3 mb-md-0">
+									<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day6.jpg')">
+										<img src="assets/images/projects/day6.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+									</a>
+									<!-- Modal Structure -->
+									<div id="imageModal" class="modal">
+										<span class="close" onclick="closeImageModal()">&times;</span>
+										<img class="modal-content" id="modalImage">
+									</div>
+								</div>
+								<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+									<br><h3 style="font-size: 2.0rem; color: #000000;">Escape Maze (Reeborg)</h3>
+									<p style="font-size: 1rem; color: #555;">Guide a robot through a maze using logical commands and loops. This project sharpens problem-solving skills and logic through a fun coding challenge.</p>
+									</div>
+							</div>
+						</div>
+					</div>
+					<br>
+				</div>
+
+				<div class="project-box" data-platform="python">
+					<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+						<div class="project-section">
+							<div class="project-item d-flex flex-column flex-md-row align-items-center">
+								<div class="project-image me-md-3 mb-md-0">
+									<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day7.jpg')">
+										<img src="assets/images/projects/day7.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+									</a>
+									<!-- Modal Structure -->
+									<div id="imageModal" class="modal">
+										<span class="close" onclick="closeImageModal()">&times;</span>
+										<img class="modal-content" id="modalImage">
+									</div>
+								</div>
+								<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+									<br>	<h3 style="font-size: 2.0rem; color: #000000;">Hangman</h3>
+									<p style="font-size: 1rem; color: #555;">Create a text-based version of the Hangman game, where users guess letters to form a secret word. This exercise focuses on string manipulation and conditional logic.</p>
+									</div>
+							</div>
+						</div>
+					</div>
+					<br>
+				</div>
+
+				<div class="project-box" data-platform="python">
+					<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+						<div class="project-section">
+							<div class="project-item d-flex flex-column flex-md-row align-items-center">
+								<div class="project-image me-md-3 mb-md-0">
+									<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day8.jpg')">
+										<img src="assets/images/projects/day8.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+									</a>
+									<!-- Modal Structure -->
+									<div id="imageModal" class="modal">
+										<span class="close" onclick="closeImageModal()">&times;</span>
+										<img class="modal-content" id="modalImage">
+									</div>
+								</div>
+								<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+									<br><h3 style="font-size: 2.0rem; color: #000000;">Caesar Cipher Encode Decode</h3>
+									<p style="font-size: 1rem; color: #555;">Design a program to encrypt and decrypt messages using the Caesar Cipher technique. It provides insight into encoding, decoding, and character shifting in strings.</p>
+									</div>
+							</div>
+						</div>
+					</div>
+					<br>
+				</div>
+
+				<div class="project-box" data-platform="python">
+					<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+						<div class="project-section">
+							<div class="project-item d-flex flex-column flex-md-row align-items-center">
+								<div class="project-image me-md-3 mb-md-0">
+									<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day9.jpg')">
+										<img src="assets/images/projects/day9.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+									</a>
+									<!-- Modal Structure -->
+									<div id="imageModal" class="modal">
+										<span class="close" onclick="closeImageModal()">&times;</span>
+										<img class="modal-content" id="modalImage">
+									</div>
+								</div>
+								<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+									<br><h3 style="font-size: 2.0rem; color: #000000;">Secret Auction</h3>
+									<p style="font-size: 1rem; color: #555;">Simulate a secret auction where bidders can anonymously place bids on items. This project highlights dictionary usage and understanding program flow.</p>
+									</div>
+							</div>
+						</div>
+					</div>
+					<br>
+				</div>
+
+				<div class="project-box" data-platform="python">
+					<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+						<div class="project-section">
+							<div class="project-item d-flex flex-column flex-md-row align-items-center">
+								<div class="project-image me-md-3 mb-md-0">
+									<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day10.jpg')">
+										<img src="assets/images/projects/day10.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+									</a>
+									<!-- Modal Structure -->
+									<div id="imageModal" class="modal">
+										<span class="close" onclick="closeImageModal()">&times;</span>
+										<img class="modal-content" id="modalImage">
+									</div>
+								</div>
+								<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+									<br><h3 style="font-size: 2.0rem; color: #000000;">Calculator</h3>
+									<p style="font-size: 1rem; color: #555;">Build a basic calculator that performs arithmetic operations like addition and subtraction. It’s an excellent introduction to function definitions and user input management.</p>
+									</div>
+							</div>
+						</div>
+					</div>
+					<br>
+				</div>
+
+				<div class="project-box" data-platform="python">
+					<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+						<div class="project-section">
+							<div class="project-item d-flex flex-column flex-md-row align-items-center">
+								<div class="project-image me-md-3 mb-md-0">
+									<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day11.jpg')">
+										<img src="assets/images/projects/day11.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+									</a>
+									<!-- Modal Structure -->
+									<div id="imageModal" class="modal">
+										<span class="close" onclick="closeImageModal()">&times;</span>
+										<img class="modal-content" id="modalImage">
+									</div>
+								</div>
+								<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+									<br><h3 style="font-size: 2.0rem; color: #000000;">Blackjack Game</h3>
+									<p style="font-size: 1rem; color: #555;">Create a digital version of the Blackjack card game where players try to beat the dealer. This project combines game logic, card handling, and scorekeeping mechanics.</p>
+									</div>
+							</div>
+						</div>
+					</div>
+					<br>
+				</div>
+
+				<div class="project-box" data-platform="python">
+					<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+						<div class="project-section">
+							<div class="project-item d-flex flex-column flex-md-row align-items-center">
+								<div class="project-image me-md-3 mb-md-0">
+									<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day12.jpg')">
+										<img src="assets/images/projects/day12.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+									</a>
+									<!-- Modal Structure -->
+									<div id="imageModal" class="modal">
+										<span class="close" onclick="closeImageModal()">&times;</span>
+										<img class="modal-content" id="modalImage">
+									</div>
+								</div>
+								<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+									<br><h3 style="font-size: 2.0rem; color: #000000;">Number Guessing Game</h3>
+									<p style="font-size: 1rem; color: #555;">Develop a game where players guess a randomly generated number with feedback provided. This project reinforces concepts of loops, randomness, and user interaction.</p>
+									</div>
+							</div>
+						</div>
+					</div>
+					<br>
+				</div>
+
+				<div class="project-box" data-platform="python">
+					<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+						<div class="project-section">
+							<div class="project-item d-flex flex-column flex-md-row align-items-center">
+								<div class="project-image me-md-3 mb-md-0">
+									<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day13.jpg')">
+										<img src="assets/images/projects/day13.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+									</a>
+									<!-- Modal Structure -->
+									<div id="imageModal" class="modal">
+										<span class="close" onclick="closeImageModal()">&times;</span>
+										<img class="modal-content" id="modalImage">
+									</div>
+								</div>
+								<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+									<br>
+									<h3 style="font-size: 2.0rem; color: #000000;">Debugging (Odd-Even, Leap Year, FizzBuzz)</h3>
+									<p style="font-size: 1rem; color: #555;">Practice debugging techniques on common coding challenges and logical errors. It’s a crucial skill-building exercise for identifying and resolving issues in code.</p>
+									</div>
+							</div>
+						</div>
+					</div>
+					<br>
+				</div>
+
+				<div class="project-box" data-platform="python">
+					<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+						<div class="project-section">
+							<div class="project-item d-flex flex-column flex-md-row align-items-center">
+								<div class="project-image me-md-3 mb-md-0">
+									<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day14.jpg')">
+										<img src="assets/images/projects/day14.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+									</a>
+									<!-- Modal Structure -->
+									<div id="imageModal" class="modal">
+										<span class="close" onclick="closeImageModal()">&times;</span>
+										<img class="modal-content" id="modalImage">
+									</div>
+								</div>
+								<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+									<br>
+									<h3 style="font-size: 2.0rem; color: #000000;">Higher Lower Game</h3>
+									<p style="font-size: 1rem; color: #555;">Design a game where users guess which of two presented items has a higher value. This project utilizes random inputs and comparison logic to enhance engagement.</p>
+									</div>
+							</div>
+						</div>
+					</div>
+					<br>
+				</div>
+			<div class="project-box" data-platform="python">
 				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
-					<div class="certification-section">
-						<div class="certification-item d-flex flex-column flex-md-row align-items-center">
-							<div class="certification-image me-md-3 mb-md-0">
-								<a href="javascript:void(0);" onclick="openImageModal('assets/images/certificates/IBM_02.jpg')">
-									<img src="assets\images\certificates\IBM_02.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day15.jpg')">
+									<img src="assets/images/projects/day15.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
 								</a>
 								<!-- Modal Structure -->
 								<div id="imageModal" class="modal">
@@ -197,528 +696,944 @@
 									<img class="modal-content" id="modalImage">
 								</div>
 							</div>
-							<div class="certification-text text-center text-md-start d-flex flex-column justify-content-center">
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
 								<br>
-								<h3 style="font-size: 2.0rem; color: #333;">
-									<a href="https://coursera.org/share/47d8394906da827ee82163cc6e0213d6" target="_blank" style="color: #000000; text-decoration: none;" onmouseover="this.style.color='#4930b8';" onmouseout="this.style.color='#000000';">Machine Learning with Python</a>
-								</h3>
-								<p style="font-size: 1rem; color: #555;">Mastered core machine learning algorithms using Python libraries like Scikit-learn.</p>
+								
+							<h3 style="font-size: 2.0rem; color: #000000;">Coffee Machine</h3>
+							<p style="font-size: 1rem; color: #555;">Simulate a coffee machine that takes orders and manages inventory. This project integrates user input handling with logical condition checks.</p>
 							</div>
-						</div><!--//certification-section-->
-					</div><!--//certification-box-->
-				</div><!--//certification-box-->
+						</div>
+					</div>
+				</div>
 				<br>
-			</div>
-			<div  class="certification-box" data-platform="coursera">
-				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
-					<div class="certification-section">
-						<div class="certification-item d-flex flex-column flex-md-row align-items-center">
-							<div class="certification-image me-md-3 mb-md-0">
-								<a href="javascript:void(0);" onclick="openImageModal('assets/images/certificates/IBM_03.jpg')">
-									<img src="assets/images/certificates/IBM_03.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
-								</a>
-								<!-- Modal Structure -->
-								<div id="imageModal" class="modal">
-									<span class="close" onclick="closeImageModal()">&times;</span>
-									<img class="modal-content" id="modalImage">
-								</div>
-							</div>
-							<div class="certification-text text-center text-md-start d-flex flex-column justify-content-center">
-								<br>
-								<h3 style="font-size: 2.0rem; color: #333;">
-									<a href="https://coursera.org/share/a18bae4b35fc32a5f777b02bb3f7ac39" target="_blank" style="color: #000000; text-decoration: none;" onmouseover="this.style.color='#4930b8';" onmouseout="this.style.color='#000000';">Introduction to Deep Learning <br>& Neural Networks using Keras</a>
-								</h3></h3>
-								<p style="font-size: 1rem; color: #555;">Gained foundational knowledge in neural networks and model-building with Keras.</p>
-							</div>
-						</div><!--//certification-section-->
-					</div><!--//certification-box-->
-				</div><!--//certification-box-->
-				<br>
-			</div>
-			<div  class="certification-box" data-platform="coursera">
-				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
-					<div class="certification-section">
-						<div class="certification-item d-flex flex-column flex-md-row align-items-center">
-							<div class="certification-image me-md-3 mb-md-0">
-								<a href="javascript:void(0);" onclick="openImageModal('assets/images/certificates/IBM_04.jpg')">
-									<img src="assets/images/certificates/IBM_04.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
-								</a>
-								<!-- Modal Structure -->
-								<div id="imageModal" class="modal">
-									<span class="close" onclick="closeImageModal()">&times;</span>
-									<img class="modal-content" id="modalImage">
-								</div>
-							</div>
-							<div class="certification-text text-center text-md-start d-flex flex-column justify-content-center">
-								<br>
-								<h3 style="font-size: 2.0rem; color: #333;">
-									<a href="https://coursera.org/share/2854d6550abf9e77f5b97427ea5e160f" target="_blank" style="color: #000000; text-decoration: none;" onmouseover="this.style.color='#4930b8';" onmouseout="this.style.color='#000000';">Introduction to Computer Vision and<br>Image Processing</a>
-								</h3></h3>
-								<p style="font-size: 1rem; color: #555;">Learned image processing techniques and computer vision fundamentals for tasks<br>like object detection.</p>
-							</div>
-						</div><!--//certification-section-->
-					</div><!--//certification-box-->
-				</div><!--//certification-box-->
-				<br>
-			</div>
-			<div  class="certification-box" data-platform="coursera">
-				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
-					<div class="certification-section">
-						<div class="certification-item d-flex flex-column flex-md-row align-items-center">
-							<div class="certification-image me-md-3 mb-md-0">
-								<a href="javascript:void(0);" onclick="openImageModal('assets/images/certificates/IBM_05.jpg')">
-									<img src="assets/images/certificates/IBM_05.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
-								</a>
-								<!-- Modal Structure -->
-								<div id="imageModal" class="modal">
-									<span class="close" onclick="closeImageModal()">&times;</span>
-									<img class="modal-content" id="modalImage">
-								</div>
-							</div>
-							<div class="certification-text text-center text-md-start d-flex flex-column justify-content-center">
-								<br>
-								<h3 style="font-size: 2.0rem; color: #333;">
-									<a href="https://coursera.org/share/9d6aca171f60e2ef5813cd32332d77ea" target="_blank" style="color: #000000; text-decoration: none;" onmouseover="this.style.color='#4930b8';" onmouseout="this.style.color='#000000';">Deep Neural Networks with PyTorch</a>
-								</h3></h3>
-								<p style="font-size: 1rem; color: #555;">Built and optimized neural networks with PyTorch, focusing on dynamic<br>computational graphs.</p>
-							</div>
-						</div><!--//certification-section-->
-					</div><!--//certification-box-->
-				</div><!--//certification-box-->
-				<br>
-			</div>
-			<div  class="certification-box" data-platform="coursera">
-				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
-					<div class="certification-section">
-						<div class="certification-item d-flex flex-column flex-md-row align-items-center">
-							<div class="certification-image me-md-3 mb-md-0">
-								<a href="javascript:void(0);" onclick="openImageModal('assets/images/certificates/IBM_06.jpg')">
-									<img src="assets/images/certificates/IBM_06.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
-								</a>
-								<!-- Modal Structure -->
-								<div id="imageModal" class="modal">
-									<span class="close" onclick="closeImageModal()">&times;</span>
-									<img class="modal-content" id="modalImage">
-								</div>
-							</div>
-							<div class="certification-text text-center text-md-start d-flex flex-column justify-content-center">
-								<br>
-								<h3 style="font-size: 2.0rem; color: #333;">
-									<a href="https://coursera.org/share/6ea304f778cdf409d0cdb2e5011c38b7" target="_blank" style="color: #000000; text-decoration: none;" onmouseover="this.style.color='#4930b8';" onmouseout="this.style.color='#000000';">Building Deep Learning Models<br>with TensorFlow</a>
-								</h3></h3>
-								<p style="font-size: 1rem; color: #555;">Learned to build, train, and deploy neural networks using TensorFlow for<br>various applications.</p>
-							</div>
-						</div><!--//certification-section-->
-					</div><!--//certification-box-->
-				</div><!--//certification-box-->
-				<br>
-			</div>
-			<div  class="certification-box" data-platform="coursera">
-				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
-					<div class="certification-section">
-						<div class="certification-item d-flex flex-column flex-md-row align-items-center">
-							<div class="certification-image me-md-3 mb-md-0">
-								<a href="javascript:void(0);" onclick="openImageModal('assets/images/certificates/IBM_07.jpg')">
-									<img src="assets/images/certificates/IBM_07.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
-								</a>
-								<!-- Modal Structure -->
-								<div id="imageModal" class="modal">
-									<span class="close" onclick="closeImageModal()">&times;</span>
-									<img class="modal-content" id="modalImage">
-								</div>
-							</div>
-							<div class="certification-text text-center text-md-start d-flex flex-column justify-content-center">
-								<br>
-								<h3 style="font-size: 2.0rem; color: #333;">
-									<a href="https://coursera.org/share/6269dcfbd8814dcc4b068c822e1ac553" target="_blank" style="color: #000000; text-decoration: none;" onmouseover="this.style.color='#4930b8';" onmouseout="this.style.color='#000000';">AI Capstone Project with Deep Learning</a>
-								</h3></h3>
-								<p style="font-size: 1rem; color: #555;">Applied deep learning to solve real-world problems using TensorFlow, Keras,<br>and PyTorch.</p>
-							</div>
-						</div><!--//certification-section-->
-					</div><!--//certification-box-->
-				</div><!--//certification-box-->
-				<br>
-			</div>
-			<div  class="certification-box" data-platform="coursera">
-				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
-					<div class="certification-section">
-						<div class="certification-item d-flex flex-column flex-md-row align-items-center">
-							<div class="certification-image me-md-3 mb-md-0">
-								<a href="javascript:void(0);" onclick="openImageModal('assets/images/certificates/IBM_08.jpg')">
-									<img src="assets/images/certificates/IBM_08.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
-								</a>
-								<!-- Modal Structure -->
-								<div id="imageModal" class="modal">
-									<span class="close" onclick="closeImageModal()">&times;</span>
-									<img class="modal-content" id="modalImage">
-								</div>
-							</div>
-							<div class="certification-text text-center text-md-start d-flex flex-column justify-content-center">
-								<br>
-								<h3 style="font-size: 2.0rem; color: #333;">
-									<a href="https://coursera.org/share/733d9bcf1fbf7408ea9c437b157a0187" target="_blank" style="color: #000000; text-decoration: none;" onmouseover="this.style.color='#4930b8';" onmouseout="this.style.color='#000000';">Introduction to Generative AI<br>Learning Path</a>
-								</h3></h3>
-								<p style="font-size: 1rem; color: #555;">Learned generative AI basics, large language models, text generation, and principles<br>of responsible AI.</p>
-							</div>
-						</div><!--//certification-section-->
-					</div><!--//certification-box-->
-				</div><!--//certification-box-->
-				<br>
-			</div>
-			<div  class="certification-box" data-platform="coursera">
-				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
-					<div class="certification-section">
-						<div class="certification-item d-flex flex-column flex-md-row align-items-center">
-							<div class="certification-image me-md-3 mb-md-0">
-								<a href="javascript:void(0);" onclick="openImageModal('assets/images/certificates/IBM_09.jpg')">
-									<img src="assets/images/certificates/IBM_09.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
-								</a>
-								<!-- Modal Structure -->
-								<div id="imageModal" class="modal">
-									<span class="close" onclick="closeImageModal()">&times;</span>
-									<img class="modal-content" id="modalImage">
-								</div>
-							</div>
-							<div class="certification-text text-center text-md-start d-flex flex-column justify-content-center">
-								<br>
-								<h3 style="font-size: 2.0rem; color: #333;">
-									<a href="https://coursera.org/share/6e68063929a434928edfbdeaa44db1be" target="_blank" style="color: #000000; text-decoration: none;" onmouseover="this.style.color='#4930b8';" onmouseout="this.style.color='#000000';">Introduction to Generative AI</a>
-								</h3></h3>
-								<p style="font-size: 1rem; color: #555;">Learned foundational concepts and applications of generative AI techniques<br>and models.</p>
-							</div>
-						</div><!--//certification-section-->
-					</div><!--//certification-box-->
-				</div><!--//certification-box-->
-				<br>
-			</div>
-			<div  class="certification-box" data-platform="coursera">
-				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
-					<div class="certification-section">
-						<div class="certification-item d-flex flex-column flex-md-row align-items-center">
-							<div class="certification-image me-md-3 mb-md-0">
-								<a href="javascript:void(0);" onclick="openImageModal('assets/images/certificates/IBM_10.jpg')">
-									<img src="assets/images/certificates/IBM_10.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
-								</a>
-								<!-- Modal Structure -->
-								<div id="imageModal" class="modal">
-									<span class="close" onclick="closeImageModal()">&times;</span>
-									<img class="modal-content" id="modalImage">
-								</div>
-							</div>
-							<div class="certification-text text-center text-md-start d-flex flex-column justify-content-center">
-								<br>
-								<h3 style="font-size: 2.0rem; color: #333;">
-									<a href="https://coursera.org/share/e3385fbfcf6525a0977d51e3c7e32769" target="_blank" style="color: #000000; text-decoration: none;" onmouseover="this.style.color='#4930b8';" onmouseout="this.style.color='#000000';">Introduction to Large Language Models</a>
-								</h3></h3>
-								<p style="font-size: 1rem; color: #555;">Explored large language models, their architecture, and practical applications in AI.</p>
-							</div>
-						</div><!--//certification-section-->
-					</div><!--//certification-box-->
-				</div><!--//certification-box-->
-				<br>
-			</div>
-			<div  class="certification-box" data-platform="coursera">
-				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
-					<div class="certification-section">
-						<div class="certification-item d-flex flex-column flex-md-row align-items-center">
-							<div class="certification-image me-md-3 mb-md-0">
-								<a href="javascript:void(0);" onclick="openImageModal('assets/images/certificates/IBM_11.jpg')">
-									<img src="assets/images/certificates/IBM_11.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
-								</a>
-								<!-- Modal Structure -->
-								<div id="imageModal" class="modal">
-									<span class="close" onclick="closeImageModal()">&times;</span>
-									<img class="modal-content" id="modalImage">
-								</div>
-							</div>
-							<div class="certification-text text-center text-md-start d-flex flex-column justify-content-center">
-								<br>
-								<h3 style="font-size: 2.0rem; color: #333;">
-									<a href="https://coursera.org/share/d41c0a1552ee967572c4310deb2f11e0" target="_blank" style="color: #000000; text-decoration: none;" onmouseover="this.style.color='#4930b8';" onmouseout="this.style.color='#000000';">Introduction to Responsible AI</a>
-								</h3></h3>
-								<p style="font-size: 1rem; color: #555;">Gained insights into responsible AI principles, ethics, and best practices for<br>AI development.</p>
-							</div>
-						</div><!--//certification-section-->
-					</div><!--//certification-box-->
-				</div><!--//certification-box-->
-				<br>
-			</div>
-			<div  class="certification-box" data-platform="coursera">
-				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
-					<div class="certification-section">
-						<div class="certification-item d-flex flex-column flex-md-row align-items-center">
-							<div class="certification-image me-md-3 mb-md-0">
-								<a href="javascript:void(0);" onclick="openImageModal('assets/images/certificates/IBM_12.jpg')">
-									<img src="assets/images/certificates/IBM_12.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
-								</a>
-								<!-- Modal Structure -->
-								<div id="imageModal" class="modal">
-									<span class="close" onclick="closeImageModal()">&times;</span>
-									<img class="modal-content" id="modalImage">
-								</div>
-							</div>
-							<div class="certification-text text-center text-md-start d-flex flex-column justify-content-center">
-								<br>
-								<h3 style="font-size: 2.0rem; color: #333;">
-									<a href="https://coursera.org/share/b5d613b53a220fd92c62ebbb40c99940" target="_blank" style="color: #000000; text-decoration: none;" onmouseover="this.style.color='#4930b8';" onmouseout="this.style.color='#000000';">Responsible AI: Applying AI Principles<br>with Google Cloud</a>
-								</h3></h3>
-								<p style="font-size: 1rem; color: #555;">Learned to implement responsible AI practices using Google Cloud tools<br>and frameworks.</p>
-							</div>
-						</div><!--//certification-section-->
-					</div><!--//certification-box-->
-				</div><!--//certification-box-->
-				<br>
-			</div>
-			<div  class="certification-box" data-platform="coursera">
-				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
-					<div class="certification-section">
-						<div class="certification-item d-flex flex-column flex-md-row align-items-center">
-							<div class="certification-image me-md-3 mb-md-0">
-								<a href="javascript:void(0);" onclick="openImageModal('assets/images/certificates/IBM_13.jpg')">
-									<img src="assets/images/certificates/IBM_13.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
-								</a>
-								<!-- Modal Structure -->
-								<div id="imageModal" class="modal">
-									<span class="close" onclick="closeImageModal()">&times;</span>
-									<img class="modal-content" id="modalImage">
-								</div>
-							</div>
-							<div class="certification-text text-center text-md-start d-flex flex-column justify-content-center">
-								<br>
-								<h3 style="font-size: 2.0rem; color: #333;">
-									<a href="https://coursera.org/share/802ecbc3f1a27a13bc680ff4ce8d134e" target="_blank" style="color: #000000; text-decoration: none;" onmouseover="this.style.color='#4930b8';" onmouseout="this.style.color='#000000';">Python for Data Science, AI &<br>Development</a>
-								</h3></h3>
-								<p style="font-size: 1rem; color: #555;">Learned Python programming for data analysis, AI applications, and software development.</p>
-							</div>
-						</div><!--//certification-section-->
-					</div><!--//certification-box-->
-				</div><!--//certification-box-->
-				<br>
-			</div>
-			<div  class="certification-box" data-platform="others">
-				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
-					<div class="certification-section">
-						<div class="certification-item d-flex flex-column flex-md-row align-items-center">
-							<div class="certification-image me-md-3 mb-md-0">
-								<a href="javascript:void(0);" onclick="openImageModal('assets/images/certificates/IGTR.jpg')">
-									<img src="assets/images/certificates/IGTR.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
-								</a>
-								<!-- Modal Structure -->
-								<div id="imageModal" class="modal">
-									<span class="close" onclick="closeImageModal()">&times;</span>
-									<img class="modal-content" id="modalImage">
-								</div>
-							</div>
-							<div class="certification-text text-center text-md-start d-flex flex-column justify-content-center">
-								<br>
-								<h3 style="font-size: 2.0rem; color: #000000;">Generative AI</h3></h3>
-								<p style="font-size: 1rem; color: #555;">Learned about OpenAI, Google Cloud, and PaLM 2 for generative AI applications.</p>
-							</div>
-						</div><!--//certification-section-->
-					</div><!--//certification-box-->
-				</div><!--//certification-box-->
-				<br>
-			</div>
-			<div  class="certification-box" data-platform="others">
-				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
-					<div class="certification-section">
-						<div class="certification-item d-flex flex-column flex-md-row align-items-center">
-							<div class="certification-image me-md-3 mb-md-0">
-								<a href="javascript:void(0);" onclick="openImageModal('assets/images/certificates/kaggle_01.png')">
-									<img src="assets/images/certificates/kaggle_01.png" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
-								</a>
-								<!-- Modal Structure -->
-								<div id="imageModal" class="modal">
-									<span class="close" onclick="closeImageModal()">&times;</span>
-									<img class="modal-content" id="modalImage">
-								</div>
-							</div>
-							<div class="certification-text text-center text-md-start d-flex flex-column justify-content-center">
-								<br>
-								<h3 style="font-size: 2.0rem; color: #000000;">Intro to Programming</h3></h3>
-								<p style="font-size: 1rem; color: #555;">Learned programming fundamentals, including concepts like variables, control flow,<br>and functions.</p>
-							</div>
-						</div><!--//certification-section-->
-					</div><!--//certification-box-->
-				</div><!--//certification-box-->
-				<br>
-			</div>
-			<div  class="certification-box" data-platform="others">
-				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
-					<div class="certification-section">
-						<div class="certification-item d-flex flex-column flex-md-row align-items-center">
-							<div class="certification-image me-md-3 mb-md-0">
-								<a href="javascript:void(0);" onclick="openImageModal('assets/images/certificates/kaggle_02.png')">
-									<img src="assets/images/certificates/kaggle_02.png" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
-								</a>
-								<!-- Modal Structure -->
-								<div id="imageModal" class="modal">
-									<span class="close" onclick="closeImageModal()">&times;</span>
-									<img class="modal-content" id="modalImage">
-								</div>
-							</div>
-							<div class="certification-text text-center text-md-start d-flex flex-column justify-content-center">
-								<br>
-								<h3 style="font-size: 2.0rem; color: #000000;">Python</h3></h3>
-								<p style="font-size: 1rem; color: #555;">Gained proficiency in Python, covering data types, structures, functions, and libraries.</p>
-							</div>
-						</div><!--//certification-section-->
-					</div><!--//certification-box-->
-				</div><!--//certification-box-->
-				<br>
-			</div>
-			<div  class="certification-box" data-platform="others">
-				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
-					<div class="certification-section">
-						<div class="certification-item d-flex flex-column flex-md-row align-items-center">
-							<div class="certification-image me-md-3 mb-md-0">
-								<a href="javascript:void(0);" onclick="openImageModal('assets/images/certificates/kaggle_03.png')">
-									<img src="assets/images/certificates/kaggle_03.png" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
-								</a>
-								<!-- Modal Structure -->
-								<div id="imageModal" class="modal">
-									<span class="close" onclick="closeImageModal()">&times;</span>
-									<img class="modal-content" id="modalImage">
-								</div>
-							</div>
-							<div class="certification-text text-center text-md-start d-flex flex-column justify-content-center">
-								<br>
-								<h3 style="font-size: 2.0rem; color: #000000;"> Intro to Machine Learning
-								</h3>
-								<p style="font-size: 1rem; color: #555;">Explored machine learning concepts, algorithms, and practical applications<br>using Python.</p>
-							</div>
-						</div><!--//certification-section-->
-					</div><!--//certification-box-->
-				</div><!--//certification-box-->
-				<br>
-			</div>
-			<div  class="certification-box" data-platform="others">
-				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
-					<div class="certification-section">
-						<div class="certification-item d-flex flex-column flex-md-row align-items-center">
-							<div class="certification-image me-md-3 mb-md-0">
-								<a href="javascript:void(0);" onclick="openImageModal('assets/images/certificates/NLJ_01.jpg')">
-									<img src="assets/images/certificates/NLJ_01.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
-								</a>
-								<!-- Modal Structure -->
-								<div id="imageModal" class="modal">
-									<span class="close" onclick="closeImageModal()">&times;</span>
-									<img class="modal-content" id="modalImage">
-								</div>
-							</div>
-							<div class="certification-text text-center text-md-start d-flex flex-column justify-content-center">
-								<br>
-								<h3 style="font-size: 2.0rem; color: #000000;">Data Science and Machine Learning Course</h3>
-								<p style="font-size: 1rem; color: #555;">Learned Python programming, data structures, data science fundamentals, and<br>machine learning algorithms.</p>
-							</div>
-						</div><!--//certification-section-->
-					</div><!--//certification-box-->
-				</div><!--//certification-box-->
-				<br>
-			</div>
-			<div  class="certification-box" data-platform="others">
-				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
-					<div class="certification-section">
-						<div class="certification-item d-flex flex-column flex-md-row align-items-center">
-							<div class="certification-image me-md-3 mb-md-0">
-								<a href="javascript:void(0);" onclick="openImageModal('assets/images/certificates/NLJ_02.jpg')">
-									<img src="assets/images/certificates/NLJ_02.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
-								</a>
-								<!-- Modal Structure -->
-								<div id="imageModal" class="modal">
-									<span class="close" onclick="closeImageModal()">&times;</span>
-									<img class="modal-content" id="modalImage">
-								</div>
-							</div>
-							<div class="certification-text text-center text-md-start d-flex flex-column justify-content-center">
-								<br>
-								<h3 style="font-size: 2.0rem; color: #000000;">
-									Introduction to Programming using Python</h3>
-								<p style="font-size: 1rem; color: #555;">Learned programming fundamentals and basic concepts using Python for<br>various applications.</p>
-							</div>
-						</div><!--//certification-section-->
-					</div><!--//certification-box-->
-				</div><!--//certification-box-->
-				<br>
-			</div>
-			<div  class="certification-box" data-platform="others">
-				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
-					<div class="certification-section">
-						<div class="certification-item d-flex flex-column flex-md-row align-items-center">
-							<div class="certification-image me-md-3 mb-md-0">
-								<a href="javascript:void(0);" onclick="openImageModal('assets/images/certificates/NLJ_03.jpg')">
-									<img src="assets/images/certificates/NLJ_03.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
-								</a>
-								<!-- Modal Structure -->
-								<div id="imageModal" class="modal">
-									<span class="close" onclick="closeImageModal()">&times;</span>
-									<img class="modal-content" id="modalImage">
-								</div>
-							</div>
-							<div class="certification-text text-center text-md-start d-flex flex-column justify-content-center">
-								<br>
-								<h3 style="font-size: 2.0rem; color: #000000;">
-									Data Structures Using Python</h3>
-								<p style="font-size: 1rem; color: #555;">Gained knowledge of data structures like lists, dictionaries, and sets for efficient<br>data management.</p>
-							</div>
-						</div><!--//certification-section-->
-					</div><!--//certification-box-->
-				</div><!--//certification-box-->
-				<br>
-			</div>
-			<div  class="certification-box" data-platform="others">
-				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
-					<div class="certification-section">
-						<div class="certification-item d-flex flex-column flex-md-row align-items-center">
-							<div class="certification-image me-md-3 mb-md-0">
-								<a href="javascript:void(0);" onclick="openImageModal('assets/images/certificates/NLJ_04.jpg')">
-									<img src="assets/images/certificates/NLJ_04.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
-								</a>
-								<!-- Modal Structure -->
-								<div id="imageModal" class="modal">
-									<span class="close" onclick="closeImageModal()">&times;</span>
-									<img class="modal-content" id="modalImage">
-								</div>
-							</div>
-							<div class="certification-text text-center text-md-start d-flex flex-column justify-content-center">
-								<br>
-								<h3 style="font-size: 2.0rem; color: #000000;">
-									Data Science Basics</h3>
-								<p style="font-size: 1rem; color: #555;">Explored foundational concepts in data science, including data analysis and<br>visualization techniques.</p>
-							</div>
-						</div><!--//certification-section-->
-					</div><!--//certification-box-->
-				</div><!--//certification-box-->
-				<br>
-			</div>
-			<div  class="certification-box" data-platform="others">
-				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
-					<div class="certification-section">
-						<div class="certification-item d-flex flex-column flex-md-row align-items-center">
-							<div class="certification-image me-md-3 mb-md-0">
-								<a href="javascript:void(0);" onclick="openImageModal('assets/images/certificates/NLJ_05.jpg')">
-									<img src="assets/images/certificates/NLJ_05.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
-								</a>
-								<!-- Modal Structure -->
-								<div id="imageModal" class="modal">
-									<span class="close" onclick="closeImageModal()">&times;</span>
-									<img class="modal-content" id="modalImage">
-								</div>
-							</div>
-							<div class="certification-text text-center text-md-start d-flex flex-column justify-content-center">
-								<br>
-								<h3 style="font-size: 2.0rem; color: #000000;">
-									Machine Learning</h3>
-								<p style="font-size: 1rem; color: #555;">Learned key machine learning algorithms, their applications, and implementation<br>using Python.</p>
-							</div>
-						</div><!--//certification-section-->
-					</div><!--//certification-box-->
-				</div><!--//certification-box-->
-				<br>
-			</div>
 			</div>
 
-			
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day16.jpg')">
+									<img src="assets/images/projects/day16.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br><h3 style="font-size: 2.0rem; color: #000000;">Coffee Machine OOP</h3>
+								<p style="font-size: 1rem; color: #555;">Transform the coffee machine project into an object-oriented program, emphasizing class structure and object management. It deepens understanding of OOP principles.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day17.jpg')">
+									<img src="assets/images/projects/day17.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br>
+								<h3 style="font-size: 2.0rem; color: #000000;">Quiz Game OOP</h3>
+<p style="font-size: 1rem; color: #555;">Create a multiple-choice quiz game using object-oriented programming. This project organizes quiz questions, tracks scores, and reinforces class-based design.</p>
+</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day18.jpg')">
+									<img src="assets/images/projects/day18.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br>
+								<h3 style="font-size: 2.0rem; color: #000000;">Turtle Graphics</h3>
+								<p style="font-size: 1rem; color: #555;">Utilize the Turtle graphics module to create visual designs and geometric shapes. It offers a creative approach to learning programming through visuals.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day19.jpg')">
+									<img src="assets/images/projects/day19.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br>
+								<h3 style="font-size: 2.0rem; color: #000000;">Turtle Game</h3>
+								<p style="font-size: 1rem; color: #555;">Develop a simple game where players control a turtle character, avoiding obstacles. This project focuses on event handling and graphics interaction in Python.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day20.jpg')">
+									<img src="assets/images/projects/day20.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br>
+								<h3 style="font-size: 2.0rem; color: #000000;">Snake Game-1</h3>
+								<p style="font-size: 1rem; color: #555;">Build the classic Snake game, where players control a growing snake that eats food. This project emphasizes game mechanics, score tracking, and user control.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day21.jpg')">
+									<img src="assets/images/projects/day21.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br>
+								<h3 style="font-size: 2.0rem; color: #000000;">Snake <Game-2></Game-2></h3>
+								<p style="font-size: 1rem; color: #555;">Build the classic Snake game, where players control a growing snake that eats food. This project emphasizes game mechanics, score tracking, and user control.</p>
+								
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day22.jpg')">
+									<img src="assets/images/projects/day22.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br>
+								<h3 style="font-size: 2.0rem; color: #000000;">Ping Pong Game</h3>
+								<p style="font-size: 1rem; color: #555;">Create a two-player Ping Pong game with paddles and a bouncing ball. It demonstrates collision detection and real-time user input handling.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day23.jpg')">
+									<img src="assets/images/projects/day23.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br>
+								<h3 style="font-size: 2.0rem; color: #000000;">Turtle Crossing Game</h3>
+<p style="font-size: 1rem; color: #555;">Design a game where players guide a turtle across a busy road, avoiding cars. It teaches event-driven programming and collision detection.</p>
+</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day24.jpg')">
+									<img src="assets/images/projects/day24.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br>
+								<h3 style="font-size: 2.0rem; color: #000000;">Mail Merge Challenge</h3>
+<p style="font-size: 1rem; color: #555;">Automate sending personalized letters to multiple recipients using a CSV file. This project introduces file handling and string manipulation in Python.</p>
+</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day25.jpg')">
+									<img src="assets/images/projects/day25.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br>
+								
+<h3 style="font-size: 2.0rem; color: #000000;">US State Quiz</h3>
+<p style="font-size: 1rem; color: #555;">Create a geography quiz where users name all 50 U.S. states by clicking on a map. It combines interactive GUI elements with data management.</p>
+</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day26.jpg')">
+									<img src="assets/images/projects/day26.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br>
+								<h3 style="font-size: 2.0rem; color: #000000;">NATO Alphabet Project</h3>
+								<p style="font-size: 1rem; color: #555;">Convert user input into its NATO phonetic alphabet equivalents for clarity. This project demonstrates dictionary usage and string manipulation.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day27.jpg')">
+									<img src="assets/images/projects/day27.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br>
+								<h3 style="font-size: 2.0rem; color: #000000;">Tkinter Basics</h3>
+								<p style="font-size: 1rem; color: #555;">Learn the fundamentals of building graphical user interfaces (GUIs) with the Tkinter library. It covers creating windows, buttons, and entry fields.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day28.jpg')">
+									<img src="assets/images/projects/day28.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br>
+								<h3 style="font-size: 2.0rem; color: #000000;">Pomodoro Timer App</h3>
+								<p style="font-size: 1rem; color: #555;">Develop a productivity timer based on the Pomodoro technique to manage work intervals effectively. It focuses on using Tkinter to build a functional app.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day29.jpg')">
+									<img src="assets/images/projects/day29.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br>
+								<h3 style="font-size: 2.0rem; color: #000000;">Password Manager</h3>
+								<p style="font-size: 1rem; color: #555;">Create a GUI-based password manager that securely stores user passwords. This project involves file handling, encryption, and user authentication.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day30.jpg')">
+									<img src="assets/images/projects/day30.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br>
+								<h3 style="font-size: 2.0rem; color: #000000;">Password Manager with Search</h3>
+								<p style="font-size: 1rem; color: #555;">Extend the password manager to include a search feature for retrieving saved passwords. This project adds complexity and functionality to an existing application.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day31.jpg')">
+									<img src="assets/images/projects/day31.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br><h3 style="font-size: 2.0rem; color: #000000;">Flash Card Game</h3>
+								<p style="font-size: 1rem; color: #555;">Build a flashcard app that aids users in learning new vocabulary with interactive card-flipping animations. It emphasizes data persistence and user engagement.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day32.jpg')">
+									<img src="assets/images/projects/day32.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br><h3 style="font-size: 2.0rem; color: #000000;">Birthday Wisher Automation</h3>
+								<p style="font-size: 1rem; color: #555;">Automate sending personalized birthday wishes via email using a contact list from a CSV file. This project combines email automation with data management.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day33.jpg')">
+									<img src="assets/images/projects/day33.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br><h3 style="font-size: 2.0rem; color: #000000;">ISS Notification Project</h3>
+								<p style="font-size: 1rem; color: #555;">Get notified when the International Space Station (ISS) passes overhead based on user location. This project utilizes API integration and real-time notifications.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day34.jpg')">
+									<img src="assets/images/projects/day34.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br><h3 style="font-size: 2.0rem; color: #000000;">GUI Quiz App</h3>
+								<p style="font-size: 1rem; color: #555;">Create a graphical quiz app that asks users multiple-choice questions and tracks scores. It focuses on combining GUI elements with quiz logic.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day35.jpg')">
+									<img src="assets/images/projects/day35.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br><h3 style="font-size: 2.0rem; color: #000000;">Weather Alert Application</h3>
+								<p style="font-size: 1rem; color: #555;">Develop a Python application that sends real-time weather alerts for the user’s location using an external API. It teaches API interaction and automation.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day36.jpg')">
+									<img src="assets/images/projects/day36.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br><h3 style="font-size: 2.0rem; color: #000000;">Stock Market Alert</h3>
+								<p style="font-size: 1rem; color: #555;">Build a Python script that notifies users of significant changes in stock market prices. This project emphasizes API usage and real-time data tracking.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day37.jpg')">
+									<img src="assets/images/projects/day37.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br><h3 style="font-size: 2.0rem; color: #000000;">Habit Tracking App</h3>
+								<p style="font-size: 1rem; color: #555;">Create an application that allows users to track and log daily habits over time. This project integrates API automation with personal tracking features.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day38.jpg')">
+									<img src="assets/images/projects/day38.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br><h3 style="font-size: 2.0rem; color: #000000;">Workout Tracker Using Google Sheets</h3>
+								<p style="font-size: 1rem; color: #555;">Automate the logging of workout data into Google Sheets using an API. It combines data entry automation with Google Sheets integration.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day39.jpg')">
+									<img src="assets/images/projects/day39.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br><h3 style="font-size: 2.0rem; color: #000000;">Flight Deal Finder</h3>
+								<p style="font-size: 1rem; color: #555;">Develop a program that automatically finds and notifies users of the best flight deals. It utilizes APIs and web scraping to monitor airline prices.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day40.jpg')">
+									<img src="assets/images/projects/day40.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br><h3 style="font-size: 2.0rem; color: #000000;">Flight Club Mail System</h3>
+								<p style="font-size: 1rem; color: #555;">Build an automated email system that sends flight deal notifications to users. This project applies automation and subscription management principles.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day41.jpg')">
+									<img src="assets/images/projects/day41.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br><h3 style="font-size: 2.0rem; color: #000000;">Basic HTML Website (Movie Ranking)</h3>
+								<p style="font-size: 1rem; color: #555;">Create a simple HTML website to rank and display favorite movies. It introduces web development concepts using HTML and CSS.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day42.jpg')">
+									<img src="assets/images/projects/day42.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br><h3 style="font-size: 2.0rem; color: #000000;">Basic Birthday Invite Website</h3>
+								<p style="font-size: 1rem; color: #555;">Build a digital birthday invitation website to create and send invitations. This project covers basic web design and handling user inputs.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day43.jpg')">
+									<img src="assets/images/projects/day43.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br><h3 style="font-size: 2.0rem; color: #000000;">Color Vocal Website</h3>
+								<p style="font-size: 1rem; color: #555;">Design a fun website that identifies colors based on user vocal input. It combines voice recognition with a simple HTML interface for interaction.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day44.jpg')">
+									<img src="assets/images/projects/day44.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br><h3 style="font-size: 2.0rem; color: #000000;">Motivational Meme Website</h3>
+								<p style="font-size: 1rem; color: #555;">Develop a website that showcases motivational memes. This project focuses on creating an aesthetically pleasing and functional web page.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day45.jpg')">
+									<img src="assets/images/projects/day45.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br><h3 style="font-size: 2.0rem; color: #000000;">"100 Movies to Watch" Website</h3>
+								<p style="font-size: 1rem; color: #555;">Build a web app that displays 100 must-watch movies, complete with details and ratings. It involves API usage and creating a structured web layout.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day46.jpg')">
+									<img src="assets/images/projects/day46.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br><h3 style="font-size: 2.0rem; color: #000000;">Spotify Playlist Using Time Machine</h3>
+								<p style="font-size: 1rem; color: #555;">Create a Spotify playlist based on songs from a specific time period using the Spotify API. It integrates API interactions to generate playlists.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day47.jpg')">
+									<img src="assets/images/projects/day47.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br>
+								<h3 style="font-size: 2.0rem; color: #000000;">Amazon Price Tracker App</h3>
+<p style="font-size: 1rem; color: #555;">Develop an application to track price changes on Amazon products and notify users of drops. This project utilizes web scraping and automation for real-time updates.</p>
+</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day48.jpg')">
+									<img src="assets/images/projects/day48.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br><h3 style="font-size: 2.0rem; color: #000000;">Using Selenium for Automation</h3>
+								<p style="font-size: 1rem; color: #555;">Automate web tasks like form submissions and site navigation using Selenium. This powerful tool helps in automating browser-based activities efficiently.</p></div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day49.jpg')">
+									<img src="assets/images/projects/day49.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br><h3 style="font-size: 2.0rem; color: #000000;">Amazon Price Tracker App</h3>
+								<p style="font-size: 1rem; color: #555;">Develop an application to track price changes on Amazon products and notify users of drops. This project utilizes web scraping and automation for real-time updates.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day50.jpg')">
+									<img src="assets/images/projects/day50.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br>
+								<h3 style="font-size: 2.0rem; color: #000000;">Using Selenium for Automation</h3>
+								<p style="font-size: 1rem; color: #555;">Automate web tasks like form submissions and site navigation using Selenium. This powerful tool helps in automating browser-based activities efficiently.</p></div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day51.jpg')">
+									<img src="assets/images/projects/day51.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br>
+								<h3 style="font-size: 2.0rem; color: #000000;">Speed Test and Tweet</h3>
+<p style="font-size: 1rem; color: #555;">Build a Python application to test internet speed and automatically tweet the results. This project introduces API integration for speed testing and social media automation.</p>
+</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day52.jpg')">
+									<img src="assets/images/projects/day52.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br>
+								
+							<h3 style="font-size: 2.0rem; color: #000000;">Instagram Followers App</h3>
+							<p style="font-size: 1rem; color: #555;">Create an app that automates tracking followers on Instagram, helping users manage follow/unfollow actions. It focuses on web scraping and API usage for social media management.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="project-box" data-platform="python">
+				<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: linear-gradient(135deg, #e0c3fc, #8ec5fc);">
+					<div class="project-section">
+						<div class="project-item d-flex flex-column flex-md-row align-items-center">
+							<div class="project-image me-md-3 mb-md-0">
+								<a href="javascript:void(0);" onclick="openImageModal('assets/images/projects/day53.jpg')">
+									<img src="assets/images/projects/day53.jpg" alt="certi_img" class="img-fluid" style="width: 100%; max-width: 200px; height: auto; border-radius: 5px;">
+								</a>
+								<!-- Modal Structure -->
+								<div id="imageModal" class="modal">
+									<span class="close" onclick="closeImageModal()">&times;</span>
+									<img class="modal-content" id="modalImage">
+								</div>
+							</div>
+							<div class="project-text text-center text-md-start d-flex flex-column justify-content-center">
+								<br>
+								<h3 style="font-size: 2.0rem; color: #000000;">Data Entry Job Automation</h3>
+<p style="font-size: 1rem; color: #555;">Automate repetitive data entry tasks using Python to fill out online forms and databases. This project emphasizes web automation and reducing manual workload through scripting.</p></div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+		</div>
 			
 			
 	            </section><!--//main-section-->
@@ -730,8 +1645,8 @@
 								 <li class="nav-item"><a href="about-me.html">About Me</a></li>
 								 <li class="nav-item"><a href="skills.html">My Skills</a></li>
 								 <li class="nav-item"><a href="work.html">Work Experience</a></li>
-								 <li class="nav-item"><a href="projects.html">My Projects</a></li>
-								 <li class="nav-item"><a class="active" href="certification.html">Certification</a></li>
+								 <li class="nav-item"><a class="active" href="projects.html">My Projects</a></li>
+								 <li class="nav-item"><a href="certification.html">Certification</a></li>
 								 <li class="nav-item"><a href="achievements.html">Achievements</a></li>
 							 </ul><!--//sidebar-nav-items-->
 						 </nav><!--//side-bar-nav-->
@@ -778,15 +1693,13 @@
 				modal.style.display = "none";
 			}
 		}
-	</script>
-	<script>
-		function filterCertificates(platform) {
-			var certificates = document.querySelectorAll('.certification-box');
-			certificates.forEach(function(cert) {
-				if (cert.dataset.platform === platform || platform === 'all') {
-					cert.style.display = 'block';
+		function filterProjects(platform) {
+			var projects = document.querySelectorAll('.project-box');
+			projects.forEach(function(pro) {
+				if (pro.dataset.platform === platform || platform === 'all') {
+					pro.style.display = 'block';
 				} else {
-					cert.style.display = 'none';
+					pro.style.display = 'none';
 				}
 			});
 		}
